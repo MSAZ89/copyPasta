@@ -6,7 +6,13 @@ export default function App() {
   return (
     <div className="App">
       <h1>
-        Copy Pasta <span style={{ fontSize: 18 }}>by Michael Simon</span>
+        Copy Pasta{" "}
+        <span style={{ fontSize: 18 }}>
+          by{" "}
+          <a target="_blank" href="https://www.michaelsimonaz.com/">
+            Michael Simon
+          </a>
+        </span>
       </h1>
       <ol>
         <li>Enter some text</li>
