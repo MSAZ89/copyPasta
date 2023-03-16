@@ -10,6 +10,9 @@ function InputComponent({ onTextChange, onDelete, defaultValue }) {
 
   return (
     <div>
+      <button style={{ margin: 4 }} onClick={handleCopy}>
+        Copy
+      </button>
       <input
         type="text"
         placeholder="Enter text to copy to clipboard"
@@ -28,8 +31,9 @@ function InputComponent({ onTextChange, onDelete, defaultValue }) {
         }}
         defaultValue={defaultValue}
       />
-      <button onClick={handleCopy}>Copy</button>
-      <button onClick={onDelete}>Delete</button>
+      <button style={{ margin: 4 }} onClick={onDelete}>
+        Delete
+      </button>
     </div>
   );
 }
