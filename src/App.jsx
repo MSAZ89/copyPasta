@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import MainPasta from "./mainPasta";
 import Pasta from "./Pasta";
 
 export default function App() {
