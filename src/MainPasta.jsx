@@ -14,7 +14,7 @@ function InputComponent({ onTextChange, onDelete }) {
     <div>
       <input
         type="text"
-        placeholder="Enter text to copy to clipboard"
+        placeholder="Enter text to copy to clipboard."
         ref={inputRef}
         style={{
           paddingTop: "10px",
