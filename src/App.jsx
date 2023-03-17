@@ -24,6 +24,7 @@ export default function App() {
           sharing
         </li>
       </ol>
+
       <Pasta />
     </div>
   );
