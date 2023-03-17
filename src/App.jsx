@@ -21,8 +21,8 @@ export default function App() {
           <summary>Info</summary>
           <ol className="my-4 list-disc text-sm">
             <li>Enter some text</li>
-            <li>Click copy to copy text</li>
-            <li>Click delete to delete the input</li>
+            <li>Click copy to copy input text</li>
+            <li>Click delete to delete an input</li>
             <li>Click "add input" to add a new input</li>
             <li>
               Fields and values are automatically updated in URL parameters for
