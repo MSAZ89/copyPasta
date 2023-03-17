@@ -105,7 +105,9 @@ export default function Pasta() {
 
   return (
     <div className="App">
-      <title>{inputs[0].text} - Copy Pasta</title>
+      <title>
+        {inputs[0].text != undefined ? inputs[0].text : null} - Copy Pasta
+      </title>
       <button
         className="border-2 my-4 border-gray-300 bg-white h-10 px-4 rounded-lg text-sm focus:outline-none focus:border-green-700 hover:bg-green-100"
         onClick={handleAddInput}
