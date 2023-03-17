@@ -19,7 +19,7 @@ function InputComponent({ onTextChange, onDelete, defaultValue }) {
         Copy
       </button>
       <input
-        className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+        className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none focus:bg-slate-300 focus:h-12 transition-all duration-400"
         type="text"
         placeholder="Enter text to copy to clipboard"
         ref={inputRef}
@@ -105,6 +105,7 @@ export default function Pasta() {
 
   return (
     <div className="App">
+      <title>{inputs[0].text} - Copy Pasta</title>
       <button
         className="border-2 my-4 border-gray-300 bg-white h-10 px-4 rounded-lg text-sm focus:outline-none focus:border-green-700 hover:bg-green-100"
         onClick={handleAddInput}
