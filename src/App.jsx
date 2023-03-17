@@ -26,6 +26,13 @@ export default function App() {
       </ol>
 
       <Pasta />
+
+      <div className="my-8">
+        <p className="font-light mb-4 text-sm">
+          No data is collected on this page in any form, only URL params. This
+          is a simple tool to copy text to clipboard easily.
+        </p>
+      </div>
     </div>
   );
 }
