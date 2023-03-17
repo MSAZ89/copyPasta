@@ -7,14 +7,14 @@ export default function App() {
     <div className="container mx-auto my-4">
       <h1 className="text-4xl my-4">
         Copy Pasta{" "}
-        <span style={{ fontSize: 18 }}>
+        <span className="font-light" style={{ fontSize: 18 }}>
           by{" "}
           <a target="_blank" href="https://www.michaelsimonaz.com/">
             Michael Simon
           </a>
         </span>
       </h1>
-      <ol className="my-4 list-disc">
+      <ol className="my-4 list-disc text-sm">
         <li>Enter some text</li>
         <li>Click copy to copy text</li>
         <li>Click delete to delete the input</li>
