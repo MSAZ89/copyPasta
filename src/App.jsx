@@ -4,8 +4,8 @@ import Pasta from "./Pasta";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>
+    <div className="container mx-auto my-4">
+      <h1 className="text-4xl my-4">
         Copy Pasta{" "}
         <span style={{ fontSize: 18 }}>
           by{" "}
@@ -14,7 +14,7 @@ export default function App() {
           </a>
         </span>
       </h1>
-      <ol>
+      <ol className="my-4 list-disc">
         <li>Enter some text</li>
         <li>Click copy to copy text</li>
         <li>Click delete to delete the input</li>

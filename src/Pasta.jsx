@@ -9,11 +9,17 @@ function InputComponent({ onTextChange, onDelete, defaultValue }) {
   };
 
   return (
-    <div>
-      <button style={{ margin: 4 }} onClick={handleCopy}>
+    <div className="my-2">
+      <button
+        title="Copy to clipboard"
+        className="border-2 border-green-500 bg-white h-10 px-4 rounded-lg text-sm focus:outline-none focus:border-green-700 hover:bg-green-100 transition-all duration-200"
+        style={{ margin: 4 }}
+        onClick={handleCopy}
+      >
         Copy
       </button>
       <input
+        className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
         type="text"
         placeholder="Enter text to copy to clipboard"
         ref={inputRef}
@@ -23,7 +29,7 @@ function InputComponent({ onTextChange, onDelete, defaultValue }) {
           paddingLeft: "10px",
           paddingRight: "10px",
           marginTop: "10px",
-          width: "50%",
+          width: "80%",
         }}
         onChange={(e) => onTextChange(e.target.value)}
         onFocus={(e) => {
@@ -31,7 +37,12 @@ function InputComponent({ onTextChange, onDelete, defaultValue }) {
         }}
         defaultValue={defaultValue}
       />
-      <button style={{ margin: 4 }} onClick={onDelete}>
+      <button
+        title="Delete"
+        className="border-2 border-red-300 bg-white h-10 px-4 rounded-lg text-sm focus:outline-none"
+        style={{ margin: 4 }}
+        onClick={onDelete}
+      >
         Delete
       </button>
     </div>
@@ -94,7 +105,12 @@ export default function Pasta() {
 
   return (
     <div className="App">
-      <button onClick={handleAddInput}>Add Input</button>
+      <button
+        className="border-2 my-4 border-gray-300 bg-white h-10 px-4 rounded-lg text-sm focus:outline-none focus:border-green-700 hover:bg-green-100"
+        onClick={handleAddInput}
+      >
+        Add Input
+      </button>
       {inputs.map((input) => (
         <div key={input.id}>
           <InputComponent
