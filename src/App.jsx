@@ -5,9 +5,9 @@ import Pasta from "./Pasta";
 export default function App() {
   return (
     <div className="container mx-auto my-4">
-      <h1 className="text-4xl my-4">
+      <h1 className="text-4xl my-4 tracking-tighter">
         Copy Pasta{" "}
-        <span className="font-light" style={{ fontSize: 18 }}>
+        <span className="font-light tracking-wide" style={{ fontSize: 18 }}>
           by{" "}
           <a target="_blank" href="https://www.michaelsimonaz.com/">
             Michael Simon
