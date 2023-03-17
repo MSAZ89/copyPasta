@@ -4,7 +4,7 @@ import Pasta from "./Pasta";
 
 export default function App() {
   return (
-    <div className="container mx-auto my-4">
+    <div className="container mx-auto my-4 bg-slate-100 p-16">
       <h1 className="text-4xl my-4 tracking-tighter">
         Copy Pasta{" "}
         <span className="font-light tracking-wide" style={{ fontSize: 18 }}>
@@ -14,16 +14,19 @@ export default function App() {
           </a>
         </span>
       </h1>
-      <ol className="my-4 list-disc text-sm">
-        <li>Enter some text</li>
-        <li>Click copy to copy text</li>
-        <li>Click delete to delete the input</li>
-        <li>Click "add input" to add a new input</li>
-        <li>
-          Fields and values are automatically updated in URL parameters for easy
-          sharing
-        </li>
-      </ol>
+      <details>
+        <summary>Info</summary>
+        <ol className="my-4 list-disc text-sm">
+          <li>Enter some text</li>
+          <li>Click copy to copy text</li>
+          <li>Click delete to delete the input</li>
+          <li>Click "add input" to add a new input</li>
+          <li>
+            Fields and values are automatically updated in URL parameters for
+            easy sharing
+          </li>
+        </ol>
+      </details>
 
       <Pasta />
 
