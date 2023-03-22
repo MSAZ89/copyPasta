@@ -8,10 +8,7 @@ export default function App() {
       <h1 className="text-4xl my-4 tracking-tighter">
         Copy Pasta{" "}
         <span className="font-light tracking-wide" style={{ fontSize: 18 }}>
-          by{" "}
-          <a target="_blank" href="https://www.michaelsimonaz.com/">
-            Michael Simon
-          </a>
+          A free copy paste tool.
         </span>
       </h1>
       <Pasta />
